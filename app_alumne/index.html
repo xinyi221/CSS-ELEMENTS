@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Positioning Lab</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- HEADER DEL LAB -->
+  <header class="lab-header">
+    <div class="header-content">
+      <span class="badge">CSS LAB</span>
+      <h1>Layout & Positioning Interactive Lab</h1>
+    </div>
+  </header>
+
+  <!-- CONTENIDOR FLEX PRINCIPAL (UN SOTA L'ALTRE) -->
+  <main class="lab-container">
+
+    <!-- BLOC 1 -->
+    <section class="lab-card" id="bloc-1">
+      <header class="card-header">
+        <span class="step-tag">01</span>
+        <h2>Model de Caixes, Padding i Bordes</h2>
+      </header>
+      <div class="card-body">
+        <div class="instructions">
+          <h3>📘 Teoria i Instruccions</h3>
+          <ul>
+            <li><strong>1.1 Shorthand:</strong> A <code>.caixa-1</code> aplica un <code>padding</code> de <code>15px</code> (vertical) i <code>30px</code> (horitzontal) amb la propietat abreujada, i un borde sòlid de <code>3px</code> verd (<code>#2e7d32</code>).</li>
+            <li><strong>1.2 Propietats individuals:</strong> A <code>.caixa-2</code> defineix <code>padding-top: 10px</code>, <code>padding-right: 20px</code>, <code>padding-bottom: 30px</code> i <code>padding-left: 40px</code>. Assigna un borde superior <code>dashed 4px #0288d1</code> i inferior <code>solid 2px #f57c00</code>.</li>
+          </ul>
+        </div>
+        <div class="workspace">
+          <div class="caixa caixa-1">1.1 Padding Shorthand + Borde Verd</div>
+          <div class="caixa caixa-2">1.2 Padding Individual + Bordes Mixtos</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BLOC 2 -->
+    <section class="lab-card" id="bloc-2">
+      <header class="card-header">
+        <span class="step-tag">02</span>
+        <h2>Box-Sizing i Overflow</h2>
+      </header>
+      <div class="card-body">
+        <div class="instructions">
+          <h3>📘 Teoria i Instruccions</h3>
+          <ul>
+            <li><strong>2.1 Box-Sizing:</strong> Ambdues caixes tenen <code>width: 200px</code> i <code>padding: 20px</code>. Assigna <code>box-sizing: content-box</code> a <code>.caixa-content</code> i <code>box-sizing: border-box</code> a <code>.caixa-border</code> per comparar-ne l'amplada real final.</li>
+            <li><strong>2.2 Overflow:</strong> A <code>.caixa-overflow</code> (alçada fixa de 70px) aplica <code>overflow: auto</code> per gestionar el text sobrant amb scroll.</li>
+          </ul>
+        </div>
+        <div class="workspace horizontal">
+          <div class="caixa caixa-content">2.1 content-box</div>
+          <div class="caixa caixa-border">2.1 border-box</div>
+          <div class="caixa caixa-overflow">
+            2.2 Overflow Auto: Aquest text és excessivament llarg per a l'alçada d'aquesta caixa i ha de generar una barra de desplaçament interna quan s'apliqui la propietat correcta.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BLOC 3 -->
+    <section class="lab-card" id="bloc-3">
+      <header class="card-header">
+        <span class="step-tag">03</span>
+        <h2>Opacitat i Visibilitat</h2>
+      </header>
+      <div class="card-body">
+        <div class="instructions">
+          <h3>📘 Teoria i Instruccions</h3>
+          <ul>
+            <li><strong>3.1 Opacitat:</strong> Aplica <code>opacity: 0.4</code> a <code>.caixa-opaca</code>.</li>
+            <li><strong>3.2 Visibilitat:</strong> Aplica <code>visibility: hidden</code> a <code>.caixa-oculta</code>. Observa com l'element es torna invisible però el seu espai es manté reservat en el document.</li>
+          </ul>
+        </div>
+        <div class="workspace horizontal">
+          <div class="caixa caixa-opaca">3.1 Opacitat (0.4)</div>
+          <div class="caixa caixa-oculta">3.2 Hidden (Visibility)</div>
+          <div class="caixa">3.3 Caixa Normal</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BLOC 4 -->
+    <section class="lab-card" id="bloc-4">
+      <header class="card-header">
+        <span class="step-tag">04</span>
+        <h2>Display: Block vs Inline vs Inline-Block</h2>
+      </header>
+      <div class="card-body">
+        <div class="instructions">
+          <h3>📘 Teoria i Instruccions</h3>
+          <ul>
+            <li><strong>4.1 Block:</strong> Fes que els <code>&lt;span&gt;</code> amb la classe <code>.span-bloc</code> es comportin com a elements de bloc (<code>display: block</code>) i afegeix-los <code>padding: 8px</code>.</li>
+            <li><strong>4.2 Inline-Block:</strong> Fes que els divs <code>.div-inline-block</code> es comportin com <code>inline-block</code>, amb una amplada de <code>120px</code> i <code>margin: 0 5px</code>.</li>
+          </ul>
+        </div>
+        <div class="workspace">
+          <p class="section-label">Spans convertits a Bloc:</p>
+          <span class="span-bloc">4.1 Span 1 (Block)</span>
+          <span class="span-bloc">4.1 Span 2 (Block)</span>
+
+          <p class="section-label">Divs convertits a Inline-Block:</p>
+          <div class="caixa div-inline-block">4.2 IB 1</div>
+          <div class="caixa div-inline-block">4.2 IB 2</div>
+          <div class="caixa div-inline-block">4.2 IB 3</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BLOC 5 -->
+    <section class="lab-card" id="bloc-5">
+      <header class="card-header">
+        <span class="step-tag">05</span>
+        <h2>Position i Z-Index</h2>
+      </header>
+      <div class="card-body">
+        <div class="instructions">
+          <h3>📘 Teoria i Instruccions</h3>
+          <ul>
+            <li><strong>5.1 Relative:</strong> Aplica <code>position: relative</code>, <code>top: 20px</code> i <code>left: 30px</code> a <code>.caixa-relativa</code>.</li>
+            <li><strong>5.2 Absolute:</strong> Utilitza <code>position: absolute</code> a <code>.caixa-absoluta</code> per fixar-la a la cantonada inferior dreta del seu contenidor relatiu (<code>bottom: 10px</code>, <code>right: 10px</code>).</li>
+            <li><strong>5.3 Z-Index:</strong> Utilitza <code>z-index</code> per aconseguir que <code>.capa-1</code> es mostri per sobre de <code>.capa-2</code>.</li>
+          </ul>
+        </div>
+        <div class="workspace">
+          <div class="stage-relative">
+            <div class="caixa caixa-relativa">5.1 Relative (+20px top, +30px left)</div>
+            <div class="caixa caixa-absoluta">5.2 Absolute (Bottom-Right)</div>
+          </div>
+          <div class="stage-zindex">
+            <div class="caixa capa capa-1">5.3 Capa 1 (Z-Index Superior)</div>
+            <div class="caixa capa capa-2">5.3 Capa 2 (A sota)</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BLOC 6 (AMPLIAT) -->
+    <section class="lab-card" id="bloc-6">
+      <header class="card-header">
+        <span class="step-tag">06</span>
+        <h2>Flexbox (Alineació, Grow, Wrap i Align-Self)</h2>
+      </header>
+      <div class="card-body">
+        <div class="instructions">
+          <h3>📘 Teoria i Instruccions</h3>
+          <ul>
+            <li><strong>6.1 Centratge i Gap:</strong> A <code>.flex-exemple-1</code>, activa Flexbox (<code>display: flex</code>), alinea els elements al centre (<code>justify-content: center</code>, <code>align-items: center</code>) i afegeix una separació de <code>15px</code> (<code>gap: 15px</code>).</li>
+            <li><strong>6.2 Space-Between i Flex-Grow:</strong> A <code>.flex-exemple-2</code>, activa Flexbox amb <code>justify-content: space-between</code>. Fes que l'element <code>.flex-grow-item</code> s'expandeixi (<code>flex-grow: 1</code>).</li>
+            <li><strong>6.3 Flex-Direction & Flex-Wrap:</strong> A <code>.flex-exemple-3</code>, activa Flexbox en direcció columna (<code>flex-direction: column</code>) i alinea els elements al final de l'eix secundari (<code>align-items: flex-end</code>). A <code>.flex-wrap-container</code> activa l'embolicat automàtic de linies (<code>flex-wrap: wrap</code>) amb un <code>gap: 10px</code>.</li>
+            <li><strong>6.4 Align-Self:</strong> A <code>.flex-exemple-4</code> (contenidor amb <code>align-items: flex-start</code> i alçada fixa 100px), alinea únicament l'element <code>.align-self-item</code> al centre verticalment (<code>align-self: center</code>).</li>
+          </ul>
+        </div>
+        <div class="workspace">
+          <p class="section-label">Exemple 6.1: Centratge i Gap</p>
+          <div class="flex-exemple-1">
+            <div class="caixa">Item 1</div>
+            <div class="caixa">Item 2</div>
+            <div class="caixa">Item 3</div>
+          </div>
+
+          <p class="section-label">Exemple 6.2: Space-Between i Flex-Grow</p>
+          <div class="flex-exemple-2">
+            <div class="caixa">Fix 1</div>
+            <div class="caixa flex-grow-item">Flex-Grow 1 (Ocupa la resta)</div>
+            <div class="caixa">Fix 2</div>
+          </div>
+
+          <p class="section-label">Exemple 6.3: Column Alignment & Flex-Wrap</p>
+          <div class="flex-exemple-3">
+            <div class="caixa">Columna Item 1</div>
+            <div class="caixa">Columna Item 2 (Alineat a la dreta)</div>
+          </div>
+          <div class="flex-wrap-container">
+            <div class="caixa caixa-w200">Wrap Item 1 (200px)</div>
+            <div class="caixa caixa-w200">Wrap Item 2 (200px)</div>
+            <div class="caixa caixa-w200">Wrap Item 3 (200px)</div>
+            <div class="caixa caixa-w200">Wrap Item 4 (200px)</div>
+          </div>
+
+          <p class="section-label">Exemple 6.4: Align-Self Individual</p>
+          <div class="flex-exemple-4">
+            <div class="caixa">Inici</div>
+            <div class="caixa align-self-item">Align-Self: Center</div>
+            <div class="caixa">Inici</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BLOC 7 (AMPLIAT) -->
+    <section class="lab-card" id="bloc-7">
+      <header class="card-header">
+        <span class="step-tag">07</span>
+        <h2>CSS Grid (1D, Multifila i Template Areas)</h2>
+      </header>
+      <div class="card-body">
+        <div class="instructions">
+          <h3>📘 Teoria i Instruccions</h3>
+          <ul>
+            <li><strong>7.1 Graella bàsica:</strong> Aplica <code>display: grid</code> a <code>.grid-exemple-1</code> amb 3 columnes de la mateixa mida (<code>grid-template-columns: repeat(3, 1fr)</code>) i <code>gap: 10px</code>.</li>
+            <li><strong>7.2 Grid Spanning:</strong> A <code>.grid-exemple-2</code>, defineix <code>grid-template-columns: 200px 1fr</code>. Fes que <code>.grid-header</code> ocupi totes les columnes amb <code>grid-column: 1 / -1</code>.</li>
+            <li><strong>7.3 Graella Multifila (Rows & Columns):</strong> Aplica <code>display: grid</code> a <code>.grid-multifila</code>. Defineix 3 columnes (<code>repeat(3, 1fr)</code>) i 2 files amb alçades específiques: <code>60px</code> per a la primera fila i <code>100px</code> per a la segona (<code>grid-template-rows: 60px 100px</code>). Defineix un <code>gap: 10px</code>.</li>
+            <li><strong>7.4 Layout amb Grid Template Areas:</strong> A <code>.grid-areas-layout</code> configura un disseny de 2 columnes (<code>150px 1fr</code>) i 3 files (<code>auto 1fr auto</code>) usant <code>grid-template-areas</code>:
+              <br><code>"header header"</code>
+              <br><code>"sidebar main"</code>
+              <br><code>"footer footer"</code>
+              <br>Assigna a cada un dels fills (<code>.g-header</code>, <code>.g-sidebar</code>, <code>.g-main</code>, <code>.g-footer</code>) la seva corresponent <code>grid-area</code>.
+            </li>
+          </ul>
+        </div>
+        <div class="workspace">
+          <p class="section-label">Exemple 7.1: Grid 3 Columnes (1 Fila)</p>
+          <div class="grid-exemple-1">
+            <div class="caixa">Cel·la 1</div>
+            <div class="caixa">Cel·la 2</div>
+            <div class="caixa">Cel·la 3</div>
+          </div>
+
+          <p class="section-label">Exemple 7.2: Layout de Columnes i Spanning</p>
+          <div class="grid-exemple-2">
+            <div class="caixa grid-header">Header (Grid-column: 1 / -1)</div>
+            <div class="caixa">Sidebar (200px)</div>
+            <div class="caixa">Contingut (1fr)</div>
+          </div>
+
+          <p class="section-label">Exemple 7.3: Graella Multifila (3 Columnes x 2 Files Fixes)</p>
+          <div class="grid-multifila">
+            <div class="caixa">Fila 1 - Col 1 (60px alt)</div>
+            <div class="caixa">Fila 1 - Col 2 (60px alt)</div>
+            <div class="caixa">Fila 1 - Col 3 (60px alt)</div>
+            <div class="caixa">Fila 2 - Col 1 (100px alt)</div>
+            <div class="caixa">Fila 2 - Col 2 (100px alt)</div>
+            <div class="caixa">Fila 2 - Col 3 (100px alt)</div>
+          </div>
+
+          <p class="section-label">Exemple 7.4: Layout d'Àrees (Header, Sidebar, Main, Footer)</p>
+          <div class="grid-areas-layout">
+            <div class="caixa g-header">Header Area</div>
+            <div class="caixa g-sidebar">Sidebar Area</div>
+            <div class="caixa g-main">Main Area</div>
+            <div class="caixa g-footer">Footer Area</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+</body>
+</html>
