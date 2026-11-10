@@ -1,5 +1,10 @@
 # Titulo
-"citació"
+Texto normal
+**texto negrita**
+*texto cursiva*
+***texto***
+~~hola~~
+>citació
 ## titulo 2
 ## titulo 3
 - hola
