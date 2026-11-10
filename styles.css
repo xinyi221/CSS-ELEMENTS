@@ -308,6 +308,7 @@ body {
   border-radius: 6px;
   /* Exercici 6.2 */
   justify-content: space-between;
+  display: flex;
 }
 
 .flex-grow-item {
@@ -315,6 +316,7 @@ body {
   border-color: #6366f1;
   /* Exercici 6.2 */
   flex-grow: 1;
+  display: flex;
 
 }
 
@@ -326,12 +328,14 @@ body {
   /* Exercici 6.3 - Flex Column */
   flex-direction: column;
   align-items: flex-end;
+  display: flex;
 }
 
 .flex-wrap-container {
   background-color: #0f172a;
   padding: 10px;
   border-radius: 6px;
+  display: flex;
   /* Exercici 6.3 - Flex Wrap */
   
   flex-wrap: wrap;
@@ -346,18 +350,19 @@ body {
   background-color: #0f172a;
   padding: 10px;
   border-radius: 6px;
-  height: 100px;
+ 
   display: flex;
   align-items: flex-start;
+  height: 100px;
   gap: 10px;
-  ;
 }
 
 .align-self-item {
   background-color: #831843;
   border-color: #ec4899;
   /* Exercici 6.4 */
-  align-self: center
+  align-self: center;
+
 }
 
 
@@ -371,8 +376,9 @@ body {
 
 .grid-exemple-2 {
   /* Exercici 7.2 */
+  display: grid;
   grid-template-columns: 200px 1fr;
-
+  gap: 10px;
 }
 
 .grid-header {
@@ -394,12 +400,15 @@ body {
 .grid-areas-layout {
   /* Exercici 7.4 - Grid Template Areas Layout */
   display: grid;
+  min-height: 200px;
+  gap: 10px;
   grid-template-columns: 150px 1fr;
-  grid-template-rows: auto 1fr;
+  grid-template-rows: auto 1fr auto;
   grid-template-areas:
     "header header"
     "sidebar main"
     "footer footer";
+
 }
 
 .g-header {
