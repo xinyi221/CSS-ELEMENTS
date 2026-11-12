@@ -398,7 +398,7 @@ body {
 }
 
 .grid-areas-layout {
-  /* Exercici 7.4 - Grid Template Areas Layout */
+  /* Exercici 7.4 -Grid Template Areas Layout */
   display: grid;
   min-height: 200px;
   gap: 10px;
